@@ -1,7 +1,7 @@
 :root {
     --primary-color: darkblue;
-    --secondary-color: lightblue;
-    --text-color: black;
+    --secondary-color: black;
+    --text-color: gray;
 }
 nav {
     background-color: darkblue;
