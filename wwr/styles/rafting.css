@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #2892D7;
-    --secondary-color: #1D70A2;
-    --accent1-color: #1B4353;
-    --accent2-color: #173753;
+    --primary-color: #2892D7; /* Celestial Blue */
+    --secondary-color: #1D70A2; /* Bice Blue */
+    --accent1-color: #1B4353; /* Charcoal Blue */
+    --accent2-color: #173753; /* Prussian Blue */
     --heading-font: "Merriweather", sans-serif;
     --body-font: "Open Sans", sans-serif;
 }
@@ -19,12 +19,13 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    color: var(--accent1-color);
+    
 }
 header, main, footer {
-    width:840px;
+    width: 840px;
     margin: 0 auto;
 }
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -39,9 +40,9 @@ nav, p, section, article {
 
 .hero {
     position: relative;
-    text-align: center;
+    
 }
-.hero-image {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
