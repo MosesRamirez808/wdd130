@@ -3,13 +3,12 @@
     --secondary-color: #1D70A2; /* Bice Blue */
     --accent1-color: #1B4353; /* Charcoal Blue */
     --accent2-color: #173753; /* Prussian Blue */
-    --heading-font: "Merriweather", sans-serif;
-    --body-font: "Open Sans", sans-serif;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Open Sans", serif;
 }
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color)
-    
+    color: var(--accent2-color);
 }
 * {
     margin: 0;
