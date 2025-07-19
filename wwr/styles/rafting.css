@@ -4,7 +4,7 @@
   --accent1-color: #1B4353;
   --accent2-color: #173753;
   --heading-font: "Merriweather", serif;
-  --body-font: "Open Sans", serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 * {
@@ -65,18 +65,44 @@ h1, h2 {
   text-align: left;
 }
 
+/* Media container styles */
 .media-container {
   position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
 
+/* Hero main image */
 .hero-img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+/* Overlay container for hero image */
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+  max-width: 1024px; /* optional: adjust or remove to fit layout */
+}
+
+/* Overlay box styles */
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(54, 69, 79, 0.5); /* charcoal blue with 50% opacity */
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero title overlay on top of image */
 .hero-title {
   position: absolute;
   top: 0;
@@ -91,22 +117,39 @@ h1, h2 {
   font-family: var(--heading-font);
 }
 
+/* Hero text container - flex for text and image side by side */
 .hero-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   background-color: rgba(27, 67, 83, 0.4);
   color: #fff;
   padding: 20px;
   max-width: 90%;
+  border-radius: 6px;
+  font-family: var(--body-font);
   font-size: 14px;
   line-height: 1.6;
-  border-radius: 6px;
-  text-align: center;
-  font-family: var(--body-font);
+  margin: 20px auto 0;
+  text-align: left;
+  position: relative; /* To stay within media-container */
 }
 
+/* Paragraphs take flexible space */
+.hero-text p {
+  flex: 1;
+}
+
+/* Image inside hero-text on the right, shrunk */
+.hero-text img.small-img {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Small images in articles */
 .small-img {
   width: 100%;
   max-width: 600px;
@@ -115,17 +158,20 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
+/* Section images */
 section img {
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
 
+/* Footer */
 footer {
   text-align: left;
   padding: 20px 0;
   font-size: 14px;
   color: var(--accent1-color);
+  border-top: none; /* no line between footer and body */
 }
 
 .footer-nav {
