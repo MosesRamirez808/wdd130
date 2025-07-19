@@ -83,7 +83,7 @@ h1, h2 {
 .image-overlay-container {
   position: relative;
   width: 100%;
-  max-width: 1024px; /* optional: adjust or remove to fit layout */
+  max-width: 1024px; 
 }
 
 /* Overlay box styles */
@@ -100,6 +100,25 @@ h1, h2 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+  display: flex;           /* Added for side-by-side layout */
+  flex-direction: row;     /* Horizontal alignment */
+  align-items: center;     /* Vertically center items */
+  gap: 20px;               /* Space between text and image */
+}
+
+/* Make paragraph text take the left space */
+.overlay-box p {
+  flex: 1;
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the image on the right */
+.overlay-box img {
+  max-width: 40%;          /* Limit image width */
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0;          /* Prevent image shrinking */
 }
 
 /* Hero title overlay on top of image */
