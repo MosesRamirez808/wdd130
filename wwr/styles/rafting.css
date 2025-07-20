@@ -83,7 +83,7 @@ h1, h2 {
 .image-overlay-container {
   position: relative;
   width: 100%;
-  max-width: 1024px; 
+  max-width: 840px;
 }
 
 /* Overlay box styles */
@@ -155,9 +155,22 @@ h1, h2 {
   position: relative; /* To stay within media-container */
 }
 
-/* Paragraphs take flexible space */
+.hero {
+    position: relative; /* To contain absolute elements */
+}
+
+.hero h1, .hero article {
+  position: absolute;
+  /* Add proper positioning e.g. top, left */
+}
+
 .hero-text p {
   flex: 1;
+}
+
+.hero-text img {
+  float: right;
+  margin-left: 15px; /* optional spacing */
 }
 
 /* Image inside hero-text on the right, shrunk */
@@ -185,6 +198,10 @@ section img {
 }
 
 /* Footer */
+.footer-nav a {
+  text-decoration: none;
+}
+
 footer {
   text-align: left;
   padding: 20px 0;
