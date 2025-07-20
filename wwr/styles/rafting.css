@@ -102,7 +102,6 @@ nav, p, section, article {
   flex-shrink: 0;          /* Prevent image from shrinking */
 }
 
-
 /* Footer styling */
 footer {
   text-align: left;
