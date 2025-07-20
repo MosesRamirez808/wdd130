@@ -1,224 +1,118 @@
+/* CSS Variables */
 :root {
-  --primary-color: #2892D7;
-  --secondary-color: #1D70A2;
-  --accent1-color: #1B4353;
-  --accent2-color: #173753;
+  --primary-color: #2892d7;        
+  --secondary-color: #1d70a2;      
+  --accent1-color: #1b4353;        
+  --accent2-color: #173753;        
   --heading-font: "Merriweather", serif;
   --body-font: "Open Sans", sans-serif;
 }
 
+/* Reset box-model for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base body styles */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: #fff;
-  text-align: left;
+  background-color: #FFF;
 }
 
-.container {
-  max-width: 840px;
+/* Limit page width and center layout */
+header, main, footer {
+  width: 840px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-header {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.logo {
-  height: 80px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-  font-weight: bold;
-}
-
-.nav a {
-  font-size: 14px;
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  text-align: left;
-}
-
+/* Headings styling */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: left;
 }
 
-/* Media container styles */
-.media-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 30px;
+/* Common spacing */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
-/* Hero main image */
-.hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Overlay container for hero image */
-.image-overlay-container {
-  position: relative;
-  width: 100%;
-  max-width: 840px;
-}
-
-/* Overlay box styles */
-.overlay-box {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(54, 69, 79, 0.5); /* charcoal blue with 50% opacity */
-  color: white;
-  padding: 15px 25px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-
-  display: flex;           /* Added for side-by-side layout */
-  flex-direction: row;     /* Horizontal alignment */
-  align-items: center;     /* Vertically center items */
-  gap: 20px;               /* Space between text and image */
-}
-
-/* Make paragraph text take the left space */
-.overlay-box p {
-  flex: 1;
-  margin: 0; /* Remove default margin */
-}
-
-/* Style for the image on the right */
-.overlay-box img {
-  max-width: 40%;          /* Limit image width */
-  height: auto;
-  border-radius: 6px;
-  flex-shrink: 0;          /* Prevent image shrinking */
-}
-
-/* Hero title overlay on top of image */
-.hero-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 0;
-  text-align: center;
-  background-color: rgba(40, 146, 215, 0.4);
-  color: #fff;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: var(--heading-font);
-}
-
-/* Hero text container - flex for text and image side by side */
-.hero-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  background-color: rgba(27, 67, 83, 0.4);
-  color: #fff;
-  padding: 20px;
-  max-width: 90%;
-  border-radius: 6px;
-  font-family: var(--body-font);
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 20px auto 0;
-  text-align: left;
-  position: relative; /* To stay within media-container */
-}
-
-.hero {
-    position: relative; /* To contain absolute elements */
-}
-
-.hero h1, .hero article {
-  position: absolute;
-  /* Add proper positioning e.g. top, left */
-}
-
-.hero-text p {
-  flex: 1;
-}
-
-.hero-text img {
-  float: right;
-  margin-left: 15px; /* optional spacing */
-}
-
-/* Image inside hero-text on the right, shrunk */
-.hero-text img.small-img {
-  width: 50%;
-  height: auto;
-  border-radius: 6px;
-  flex-shrink: 0; /* Prevent shrinking */
-}
-
-/* Small images in articles */
-.small-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Section images */
-section img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Footer */
+/* Remove underline on footer social media icons */
+.socialmedia a,
 .footer-nav a {
   text-decoration: none;
 }
 
+/* Logo styling (optional) */
+.logo {
+  height: 150px;
+  margin: 10px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero img.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent2-color);
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+/* Hero article styling */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(73, 151, 208, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  color: white;
+  display: flex;           /* Make it flex container */
+  align-items: center;     /* Vertically center items */
+  gap: 16px;               /* Space between text and image */
+}
+
+.hero article .text-content {
+  flex: 1;                 /* Text takes remaining width */
+  font-size: 18px;
+}
+
+.hero article img.small-img {
+  width: 125px;            /* Fix image width */
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;          /* Prevent image from shrinking */
+}
+
+
+/* Footer styling */
 footer {
   text-align: left;
-  padding: 20px 0;
-  font-size: 14px;
-  color: var(--accent1-color);
-  border-top: none; /* no line between footer and body */
+  color: var(--accent2-color);
+  padding: 16px 0;
 }
 
-.footer-nav {
-  margin-top: 10px;
+footer img {
+  height: 40px;
+  margin: 0 8px;
 }
 
-.footer-nav a {
-  margin-right: 15px;
-}
-
-.footer-nav img {
-  height: 32px;
-  vertical-align: middle;
-}
