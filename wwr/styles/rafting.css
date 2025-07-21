@@ -7,51 +7,46 @@
   --body-font: "Open Sans", sans-serif;
 }
 
-/* Reset box-model for all elements */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base body styles */
+
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #FFF;
 }
 
-/* Limit page width and center layout */
+
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Headings styling */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Common spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Remove underline on footer social media icons */
 .socialmedia a,
 .footer-nav a {
   text-decoration: none;
 }
 
-/* Logo styling (optional) */
 .logo {
   height: 150px;
   margin: 10px;
 }
 
-/* Hero section */
 .hero {
   position: relative;
 }
@@ -74,7 +69,6 @@ nav, p, section, article {
   font-size: 2rem;
 }
 
-/* Hero article styling */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -85,24 +79,23 @@ nav, p, section, article {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.8);
   color: white;
-  display: flex;           /* Make it flex container */
-  align-items: center;     /* Vertically center items */
-  gap: 16px;               /* Space between text and image */
+  display: flex;           
+  align-items: center;     
+  gap: 16px;               
 }
 
 .hero article .text-content {
-  flex: 1;                 /* Text takes remaining width */
+  flex: 1;                
   font-size: 18px;
 }
 
 .hero article img.small-img {
-  width: 125px;            /* Fix image width */
+  width: 125px;            
   height: auto;
   border-radius: 4px;
-  flex-shrink: 0;          /* Prevent image from shrinking */
+  flex-shrink: 0;          
 }
 
-/* Footer styling */
 footer {
   text-align: left;
   color: var(--accent2-color);
@@ -113,4 +106,3 @@ footer img {
   height: 40px;
   margin: 0 8px;
 }
-
