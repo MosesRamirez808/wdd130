@@ -7,20 +7,17 @@
   --body-font: "Open Sans", sans-serif;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #FFF;
 }
-
 
 header, main, footer {
   width: 840px;
@@ -79,21 +76,21 @@ nav, p, section, article {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.8);
   color: white;
-  display: flex;           
-  align-items: center;     
-  gap: 16px;               
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .hero article .text-content {
-  flex: 1;                
+  flex: 1;
   font-size: 18px;
 }
 
 .hero article img.small-img {
-  width: 125px;            
+  width: 30%;
   height: auto;
   border-radius: 4px;
-  flex-shrink: 0;          
+  flex-shrink: 0;
 }
 
 footer {
