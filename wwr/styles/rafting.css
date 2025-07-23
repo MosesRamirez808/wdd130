@@ -42,6 +42,17 @@ nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
+.history-content {
+  display: flex;
+  gap: 24px; /* space between paragraphs */
+}
+
+.history-content p {
+  flex: 1; /* paragraphs take equal width */
+  line-height: 1.5;
+  color: var(--accent1-color);
+}
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
