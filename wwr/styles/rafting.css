@@ -43,12 +43,12 @@ nav, p, section, article {
   padding: 8px;
 }
 .history-content {
-  display: flex;
-  gap: 24px; /* space between paragraphs */
+   
+  gap: 24px; 
 }
 
 .history-content p {
-  flex: 1; /* paragraphs take equal width */
+  flex: 1; 
   line-height: 1.5;
   color: var(--accent1-color);
 }
@@ -144,4 +144,25 @@ footer {
 footer img {
   height: 40px;
   margin: 0 8px;
+}
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px;
+}
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 16px);
+  text-align: center;
+}
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--accent1-color);
 }
