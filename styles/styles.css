@@ -18,7 +18,7 @@ nav {
 }
 
 nav a {
-    display: block;
+    display: outside;
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
@@ -81,4 +81,23 @@ footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intro-section p {
+    flex: 1;
+    margin: 0;
+}
+
+.intro-section img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
