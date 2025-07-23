@@ -46,8 +46,9 @@ p {
 
 .grid {
     display: grid;
-    grid-row: 1;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: start;
 }
 
 main {
