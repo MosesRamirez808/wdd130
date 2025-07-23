@@ -146,11 +146,12 @@ footer img {
   margin: 0 8px;
 }
 .adventure-gallery {
+  border: thin solid var(--accent1-color);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 8px;
+  flex-flow: column;
+  padding: 5px;
+  max-width: relative;
+  margin: auto;
 }
 .adventure-gallery figure {
   flex: 1 1 calc(20% - 16px);
@@ -162,7 +163,7 @@ footer img {
   border-radius: 8px;
 }
 .adventure-gallery figcaption {
-  margin-top: 8px;
+  margin-top: 20px;
   font-weight: bold;
   color: var(--accent1-color);
 }
