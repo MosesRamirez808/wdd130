@@ -150,7 +150,7 @@ footer img {
   display: flex;
   flex-flow: column;
   padding: 5px;
-  max-width: relative;
+  max-width: 100%;
   margin: auto;
 }
 .adventure-gallery figure {
