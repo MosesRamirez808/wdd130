@@ -156,6 +156,7 @@ footer img {
 .adventure-gallery figure {
   flex: 1 1 calc(20% - 16px);
   text-align: center;
+           
 }
 .adventure-gallery img {
   width: 100%;
@@ -166,4 +167,7 @@ footer img {
   margin-top: 20px;
   font-weight: bold;
   color: var(--accent1-color);
+  font-size: 25px;
+  text-transform: capitalize;
+  
 }
