@@ -17,12 +17,16 @@ body {
     font-family: sans-serif;
     font-size: 1.2em;
     color: #1b4353;
-    background: #1d70a2;
+    background: #fff;
 }
 
+
 header {
-    margin: 1rem;
-    width: 600px;
+  background-color: white;
+  padding: 1rem 0;
+  border-bottom: 1px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -46,7 +50,7 @@ fieldset {
     display: grid;
     grid-gap: .5rem;
     margin: 1rem;
-    border: 1px #2892d7;
+    border: 1px #fff;
     padding: 1rem;
 }
 
@@ -84,19 +88,23 @@ button {
   border-radius: .5rem;
   padding: .75rem;
   font-size: 1.2rem;
+  width: 125px;
+  display: block;         
+  margin: 1rem auto;      
+ 
 }
 
 button:hover {
-  background-color: darkgreen;
+  background-color: #173753;
 }
 
 footer {
   margin: 1rem auto 0;
-  width: 650px;
+  width: 550px;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.em;
   color: #777;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc
 }
 
 .form-item {
