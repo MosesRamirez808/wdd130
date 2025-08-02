@@ -14,9 +14,11 @@
         <fieldset>
             <legend>Contact Information</legend>
             <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname">
+            <input type="text" id="fullname" name="fullname" required><br>
+            
+
             <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail">
+            <input type="email" id="useremail" name="useremail"><br><br>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
@@ -25,8 +27,18 @@
                 <option value="chrome">Chrome</option>
                 <option value="safari">Safari</option>
                 <option value="edge">Edge</option>
-            <checkbox>
+                <option value="firefox">Firefox</option>
+                <option value="opera">Opera</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="browser">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet" value="yes">
+            </label><br>
+        
+            <label for="feeback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="2" placeholder="Maui Hawaii, United States of America"></textarea>
         </fieldset>
+        <button type="submit">Submit Poll</button>
     </form>
 </main>
 <footer>
