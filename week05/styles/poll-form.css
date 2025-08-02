@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #2892d7;        
+  --secondary-color: #1d70a2;      
+  --accent1-color: #1b4353;        
+  --accent2-color: #173753;        
+  --heading-font: "Merriweather", serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: #1b4353;
+    background: #1d70a2;
+}
+
+header {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #173753;
+    text-align: center;
+}
+
+form {
+    width: 600;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #1b4353;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    display: grid;
+}
