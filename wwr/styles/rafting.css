@@ -633,4 +633,13 @@ footer p:last-of-type a:hover {
         text-align: left;
         font-weight: bold;
     }
+     .banner-top .banner-content,
+    .banner-footer .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-footer .banner-content {
+        justify-content: center;
+    }
 }
