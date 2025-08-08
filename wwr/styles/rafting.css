@@ -643,3 +643,29 @@ main.trips-grid {
 .footer-nav a:hover {
     opacity: 0.7;
 }
+
+/* === Text Left, Image Right Layout === */
+.text-image-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.text-image-row .text-content {
+  flex: 1;
+}
+
+.text-image-row .image-content {
+  flex: 1;
+  text-align: right;
+}
+
+.text-image-row .image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
