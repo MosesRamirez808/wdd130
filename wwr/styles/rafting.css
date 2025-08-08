@@ -187,6 +187,8 @@ footer {
   color: var(--accent2-color);
   font-family: var(--body-font);
   font-size: 0.9rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 
