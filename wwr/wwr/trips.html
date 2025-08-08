@@ -18,7 +18,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
+            <a href="trips.html" class="active">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
@@ -26,110 +26,121 @@
     <!-- Top Banner Section -->
     <section class="banner-top">
         <div class="banner-content">
-            <img src="top_banner.webp" alt="Top Banner Image">
-            
+            <img src="top_banner.webp" alt="Rafting adventure banner image">
         </div>
     </section>
 
     <main class="trips-grid">
+
+        <!-- Call to Action -->
         <section class="call-to-action">
             <h2>Ready for an adventure?</h2>
             <p>Contact us today to book your dream whitewater rafting trip!</p>
             <a href="contact.html" class="button">Contact Us Now!</a>
         </section>
 
+        <!-- Popular Trips -->
         <section class="trip-descriptions">
             <h2>Our Most Popular Trips</h2>
 
-<div class="trip-section">
-  <img src="scenic_river_rafting.jpg" alt="The Gorge Expedition">
-  <div class="trip-description">
-    <h3>The Gorge Expedition</h3>
-    <p>An adrenaline-packed journey through the majestic Grand Canyon. This wild ride offers breathtaking views, exhilarating rapids, and unique camping experiences under the stars. Suitable for adventurers who are looking for every moment to count.</p>
-  </div>
-</div>
+            <div class="trip-section">
+                <img src="scenic_river_rafting.jpg" alt="The Gorge Expedition rafting view">
+                <div class="trip-description">
+                    <h3>The Gorge Expedition</h3>
+                    <p>An adrenaline-packed journey through the majestic Grand Canyon. This wild ride offers breathtaking views, exhilarating rapids, and unique camping experiences under the stars. Suitable for adventurers who want every moment to count.</p>
+                </div>
+            </div>
 
-<div class="trip-section">
-  <img src="family_river_rafting.jpg" alt="Family Fun Trip">
-  <div class="trip-description">
-    <h3>Family Fun Trip</h3>
-    <p>Perfect for families with young children or new rafters—a relaxed experience. This plan of easy rides allows stunning scenery, appreciation for the surrounding, and plenty of selfie-worthy stops. A great introduction to the joys of river rafting!</p>
-  </div>
-</div>
+            <div class="trip-section">
+                <img src="family_river_rafting.jpg" alt="Family Fun Trip rafting group">
+                <div class="trip-description">
+                    <h3>Family Fun Trip</h3>
+                    <p>Perfect for families with young children or new rafters—a relaxed experience. This trip features easy rides, stunning scenery, and selfie-worthy stops. A great introduction to the joys of river rafting!</p>
+                </div>
+            </div>
 
-<div class="trip-section">
-  <img src="challening_river_rafting.webp" alt="Adrenaline Seeker Special">
-  <div class="trip-description">
-    <h3>Adrenaline Seeker Special</h3>
-    <p>Are you ready to conquer the wildest rapids the Western Rivers can offer? Let’s get you off your phone and into the roaring waters. Precision timing, experience, and teamwork make this the challenging and thrilling adventure you’re ready to complete this year!</p>
-  </div>
-</div>
-
+            <div class="trip-section">
+                <img src="challenging_river_rafting.webp" alt="Adrenaline Seeker Special rapids">
+                <div class="trip-description">
+                    <h3>Adrenaline Seeker Special</h3>
+                    <p>Ready to conquer the wildest rapids the Western Rivers can offer? Get off your phone and into the roaring waters. Precision, experience, and teamwork make this the thrilling adventure of a lifetime!</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Trip Table -->
         <section class="trip-table">
             <h3>All Available Trips</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price (per person)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Trip Name">The Grand Canyon Expedition</td>
-                        <td data-label="Duration">7 Days</td>
-                        <td data-label="Difficulty">Intermediate</td>
-                        <td data-label="Price (per person)">$2,500</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Trip Name">Family Fun Float</td>
-                        <td data-label="Duration">Half Day</td>
-                        <td data-label="Difficulty">Easy</td>
-                        <td data-label="Price (per person)">$95</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Trip Name">Adrenaline Rush Rapid Run</td>
-                        <td data-label="Duration">1 Day</td>
-                        <td data-label="Difficulty">Expert</td>
-                        <td data-label="Price (per person)">$350</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Trip Name">Canyon Discovery</td>
-                        <td data-label="Duration">3 Days</td>
-                        <td data-label="Difficulty">Intermediate</td>
-                        <td data-label="Price (per person)">$1,200</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Trip Name">Twilight River Cruise</td>
-                        <td data-label="Duration">Evening</td>
-                        <td data-label="Difficulty">Easy</td>
-                        <td data-label="Price (per person)">$75</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table>
+                    <caption class="visually-hidden">Trip options, durations, difficulty levels, and prices</caption>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Price (per person)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Trip Name">The Gorge Expedition</td>
+                            <td data-label="Duration">7 Days</td>
+                            <td data-label="Difficulty">Intermediate</td>
+                            <td data-label="Price (per person)">$2,500</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Family Fun Trip</td>
+                            <td data-label="Duration">Half Day</td>
+                            <td data-label="Difficulty">Easy</td>
+                            <td data-label="Price (per person)">$95</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Adrenaline Seeker Special</td>
+                            <td data-label="Duration">1 Day</td>
+                            <td data-label="Difficulty">Expert</td>
+                            <td data-label="Price (per person)">$350</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Canyon Discovery</td>
+                            <td data-label="Duration">3 Days</td>
+                            <td data-label="Difficulty">Intermediate</td>
+                            <td data-label="Price (per person)">$1,200</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Twilight River Cruise</td>
+                            <td data-label="Duration">Evening</td>
+                            <td data-label="Difficulty">Easy</td>
+                            <td data-label="Price (per person)">$75</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
+
+        <!-- Final Call to Action -->
+        <section class="call-to-action">
+            <h2>Join Us for an Unforgettable Experience!</h2>
+            <p>Whether you're a seasoned rafter or a first-timer, we have the perfect trip for you. Book now and make memories that will last a lifetime!</p>
+        </section>
+
     </main>
 
-
-<footer class="Image-container">
-    <img src="footer_banner.jpg" alt="Rafting Adventure Footer Image" class="footer-bg">
-    <div class="overlay-footer">
-        <h2>Book Your Next Trip!</h2>
-        <p>©2025 ⁜ Blue Rafting ⁜ Moses Ramirez</p>
-        <div class="footer-nav">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+    <!-- Footer -->
+    <footer class="footer_banner">
+        <img src="footer_banner.jpg" alt="Rafting Adventure Footer Image" class="footer-bg">
+        <div class="overlay-footer">
+            <h2>Book Your Next Trip!</h2>
+            <p>©2025 ⁜ Blue Rafting ⁜ Moses Ramirez</p>
+            <div class="footer-nav">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            <p>
+                <a href="https://app.moqups.com/e47pk0f3FXJOr5tpw1iYHGAwiG9VEAx0/view/page/ad64222d5" target="_blank" rel="noopener noreferrer">View Wireframe</a>
+            </p>
         </div>
-        <p>
-            <a href="https://app.moqups.com/e47pk0f3FXJOr5tpw1iYHGAwiG9VEAx0/view/page/ad64222d5" target="_blank" rel="noopener noreferrer">View Wireframe</a>
-        </p>
-    </div>
-</footer>
-</div>
+    </footer>
 </body>
 </html>
