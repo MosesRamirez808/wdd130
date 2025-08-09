@@ -714,3 +714,92 @@ main.trips-grid {
     flex: 1;
     min-width: 400px;
 }
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Grid Layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em;
+}
+
+.info-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CTA */
+.cta {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 2em;
+}
+
+.btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 2em;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: 1column;
+    align-items: relative;
+    justify-content: center;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    width: 300px;
+    display: inline-block;
+    margin: 0.5em auto;
+}
+
+.newsletter button {
+    background-color: #003049;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+
