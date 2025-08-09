@@ -3,17 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moses Ramirez | WDD 130</title>
-    <meta name="description" content="A biography page for Moses Ramirez, a student at BYU Pathway from Maui, Hawaii.">
+    <title>Home Page</title>
+    <meta name="description" content="White water rafting adventure site for Moses Ramirez, featuring trips, signups, and more.">
     <meta name="author" content="Moses Ramirez">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap" rel="stylesheet" hreflang="en">  
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap" rel="stylesheet" hreflang="en">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -27,35 +28,62 @@
         </nav>
     </header>
 
-    <div class="grid">
-      <main>
-        <h1>Moses Ramirez | WDD 130</h1>
-        <div class="intro-section">
-          <p>Hello my name is Moses and I am from Maui, Hawaii. 
-                I started BYU Pathway in December of 2024. I am excited for this new journey and what awaits me.  
-                I can't wait to get my degree and put it to use in a field I waited too long to get started in.
-                </p> 
-          <img src="images/profile.webp" alt="Moses Ramirez Profile Picture">
-        </div>
-        <ul class="box">
-          <li><a href="https://www.byupathway.org/" target="_blank">BYU Pathway</a></li>
-          <li><a href="https://www.byui.edu/" target="_blank">BYU Idaho</a></li>
-          <li><a href="https://www.byuh.edu/" target="_blank">BYU Hawaii</a></li>
-          <li><a href="https://www.byupathway.edu/sign-in" target="_blank">BYU Online Learning</a></li>
-        </ul>
-      </main>
-      <aside class="box">
-        <h2>Maui, Hawaii United States of America</h2>
-        <img src="images/maui_marriott_hotel.jpg" alt="Maui Marriott Pool">
-        <p>Maui is the second-largest of the Hawaiian Islands and is known for its stunning beaches, lush landscapes, and vibrant culture.
-            It is a popular tourist destination, offering activities such as snorkeling, hiking, and exploring the Haleakalā National Park.
-            The island is also famous for its luxury resorts, including the Maui Marriott Hotel, which features a beautiful pool and ocean views.
-            Maui's diverse ecosystems range from volcanic craters to tropical rainforests, making it a paradise for nature lovers.</p>
-      </aside>
-    </div>
+    <!-- Hero Image with Heading -->
+    <section class="hero">
+        <img src="images/hero_image.jpg" alt="Exciting rafting trip" class="hero-image">
+        <h1 class="hero-heading">Ride the Rapids. Feel the Rush.</h1>
+    </section>
 
+    <!-- Grid Content Section -->
+    <section class="info-grid">
+        <div class="info-item">
+            <img src="images/group_rafting.jpg" alt="Group rafting">
+            <h2>Unforgettable Experiences</h2>
+            <p>Our guided rafting tours offer thrills, breathtaking scenery, and lasting memories. Perfect for beginners and pros alike!</p>
+        </div>
+        <div class="info-item">
+            <img src="images/down_the_river.jpg" alt="Rafting down the river">
+            <h2>Adventure for Everyone</h2>
+            <p>Whether you're seeking extreme rapids or a calm float, we’ve got the perfect trip for your adventure level.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Make a Splash?</h2>
+        <p>Plan your next adventure today and explore our available rafting trips.</p>
+        <a href="trips.html" class="btn">View Our Trips</a>
+    </section>
+
+    <!-- Newsletter Sign-up Form -->
+    <section class="newsletter">
+        <h2>Stay in the Flow</h2>
+        <p>Sign up to receive updates on new trips, discounts, and safety tips.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>©2025 ⁜ Moses Ramirez ⁜ Maui, Hawaii</p>
+      <p>© 2025 Blue Rafting Moses Ramirez</p>
+      <nav class="footer-nav">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/facebook_icon.png" alt="Facebook Link">
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/twitter_icon.png" alt="Twitter Link">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/instagram_icon.png" alt="Instagram Link">
+        </a>
+      </nav>
     </footer>
 </body>
 </html>
