@@ -27,8 +27,8 @@ nav a {
 }
 
 h1 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    color: #003360;
+    border-bottom: 2px solid #005fa3;
     padding-bottom: 0.5rem;
 }
 
